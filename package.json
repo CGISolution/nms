@@ -5,13 +5,13 @@
   "main": "debug.js",
   "dependencies": {
     "total.js": "~1.6.0-1",
-    "angular": "~1.2.21"
+    "angular": "~1.2.21",
+    "mongoose": "~3.8.15"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-cli": "~0.1.13",
-    "grunt-contrib-less": "~0.11.4",
-    "angular": "~1.2.21"
+    "grunt-contrib-less": "~0.11.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

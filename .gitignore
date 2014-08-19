@@ -4,6 +4,6 @@
 *.pid
 
 databases/*.cache
-tmp/*.js
+tmp/*
 
 
