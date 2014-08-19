@@ -6,6 +6,7 @@
 <!-- /app/css/ -->
 @{ngStyle('app')}
 
+
 <!-- cdnjs -->
 @{ngLocale('en-us')}
 
@@ -22,11 +23,18 @@
     <meta name="viewport" content="width=1024, user-scalable=yes" />
     <meta name="robots" content="all,follow" />
     @{head}
+
+    @{if framework.isDebug === true}
+      @{css('main.css')}
+    @{else}
+      @{css('main.min.css')}
+    @{endif}
+
     @{favicon('favicon.ico')}
 </head>
 <body>
-
-    <div ng-controller="home">{{ name }}</div>
+    
+  <div ng-controller="home">{{ name }}</div>
 
 </body>
 </html>
