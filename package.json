@@ -6,7 +6,11 @@
   "dependencies": {
     "total.js": "~1.6.0-1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-less": "~0.11.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
