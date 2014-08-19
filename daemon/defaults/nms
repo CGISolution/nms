@@ -1,0 +1,6 @@
+
+USER="node-user"
+GROUP="node-user"
+
+# Location of application
+APPPATH="/var/www/nms/"
