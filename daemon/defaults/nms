@@ -1,6 +1,8 @@
 
 USER="node-user"
-GROUP="node-user"
 
 # Location of application
-APPPATH="/var/www/nms/"
+APP_PATH="/var/www/nms/"
+
+# index file to execute (do not include .js)
+INDEX_FILE='debug'

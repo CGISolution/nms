@@ -1,3 +1,3 @@
-function HomeCtrl($scope) {
-    $scope.name = 'total.js + angular.js = awesome';
+function home($scope) {
+    $scope.name = 'Node Management System';
 }

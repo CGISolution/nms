@@ -1,5 +1,5 @@
 @{layout('')}
-@{meta('title', 'description', 'keywords')}
+@{meta('Node Management System', 'description', 'keywords')}
 
 @{ng('angular', 'resource', 'route')}
 
@@ -13,7 +13,7 @@
 @{ngController('home', 'user')}
 
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="nms">
 <head>
     @{meta}
     <meta charset="utf-8" />
@@ -26,7 +26,7 @@
 </head>
 <body>
 
-    <div ng-controller="HomeCtrl">{{ name }}</div>
+    <div ng-controller="home">{{ name }}</div>
 
 </body>
 </html>
