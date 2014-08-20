@@ -3,6 +3,8 @@
 *.swo
 *.pid
 
+node_modules/grunt*
+
 databases/*.cache
 tmp/*
 
