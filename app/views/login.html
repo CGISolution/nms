@@ -2,7 +2,7 @@
 
 <div class='container'>
 
-  <alert></alert>
+  <alert ng-repeat-"alert in alerts" type="{{alert.type}}" close="removeAlert($index)">{{alert.msg}}</alert>
 
   <div class='col-sm-6 col-sm-offset-3'>
     <div class='panel panel-default'>
