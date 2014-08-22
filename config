@@ -3,9 +3,10 @@ version                  : 0.1.0
 author                   : CGI Solution
 secret                   : 
 
+database                 : mongodb://nms:nmspassword@localhost:27017/nms
 
 // Mail settings
-mail.smtp                : smtp.cgisolution.com.com
+mail.smtp                : smtp.cgisolution.com
 mail.smtp.options        : "{"secure":false,"port":25,"user":"","password":"","timeout":10000}"
 mail.address.from        : noreply@cgisolution.com
 mail.address.reply       : noreply@cgisolution.com

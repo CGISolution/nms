@@ -5,6 +5,5 @@ exports.install = function(framework) {
 function index() {
 
     var self = this;
-
     self.view('app');
 }

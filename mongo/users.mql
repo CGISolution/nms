@@ -1,0 +1,22 @@
+//#dsn mongodb://nms:nmspassword@localhost:27017/nms
+
+db.users.insert({'firstName':'William', 'lastName': 'Gallios'});
+
+
+
+db.users.find()
+
+db.users.update(
+    { _id: '53f79e107f3fc2f23e19699a' },
+    { status: 'Active' }
+)
+
+
+db.users.save(
+    {
+        '_id': ObjectId("53f7a7c57f3fc2f23e19699b"),
+        'firstName': 'Cynthia',
+        'lastName': 'Gallios',
+        status: 'Inactive'
+    }
+)
