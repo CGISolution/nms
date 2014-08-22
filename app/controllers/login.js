@@ -1,14 +1,17 @@
 
 function index ($scope, $log)
 {
-    //$scope.alerts = [];
-    $scope.alerts = [{ type: 'warning', msg: 'Test' }];
+    $scope.alerts = [
+        'Please enter your email',
+        'Please enter a valid email',
+        'Please enter your password'
+    ];
 
-    $log('Test log');
-
-    $scope.removeAlert = function (index)
+    $scope.checkLoginForm = function ()
     {
-        $scope.alerts.splice(index, 1);
+        if (this.login.email.$dirty)
+        {
+           // $log.warn($scope.email);
+        }
     };
-
 }
