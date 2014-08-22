@@ -6,6 +6,7 @@
 node_modules/grunt*
 
 databases/*.cache
+databases/*.nosql
 tmp/*
 
 

@@ -1,5 +1,5 @@
 
-function index ($scope, $log)
+function prompt ($scope, $log)
 {
     $scope.alerts = [
         'Please enter your email',
