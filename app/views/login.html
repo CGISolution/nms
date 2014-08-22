@@ -1,14 +1,13 @@
 <div ng-include="'views/template/nav.html'"></div>
 
 <div class='container'>
-  <form name='login' novalidate>
 
+  <form name='login' ng-submit='submitLogin(login.$valid)' novalidate>
+  
   <alert ng-show="login.email.$dirty && login.email.$invalid || login.passwd.$dirty && login.passwd.$invalid" type="warning">
     <span ng-show='login.email.$error.required'>Please enter your email</span>
     <span ng-show='login.email.$error.email'>Please enter a valid email</span>
     <span ng-show='login.passwd.$error.required'>Please enter your password</span>
-
-
   </alert>
 
   <div class='col-sm-6 col-sm-offset-3'>
@@ -28,7 +27,7 @@
       </div>
 
       <div class='panel-footer'>
-        <button type='button' disabled='disabled' class='btn btn-primary'>Login</button>
+        <button type='submit' ng-disabled='login.$invalid' class='btn btn-primary'>Login</button>
       </div>
 
     </div> <!-- /panel -->

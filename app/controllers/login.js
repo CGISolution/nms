@@ -14,4 +14,12 @@ function index ($scope, $log)
            // $log.warn($scope.email);
         }
     };
+
+    $scope.submitLogin = function (loginValid)
+    {
+        if (loginValid)
+        {
+
+        }
+    };
 }

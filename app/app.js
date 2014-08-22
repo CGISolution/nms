@@ -9,6 +9,7 @@ app.config(function ($routeProvider, $locationProvider, $logProvider){
         templateUrl: 'views/login.html',
         controller:'index'
     }).when('/login', {
+
     }).otherwise({ redirectTo: '/' });
 
 });
