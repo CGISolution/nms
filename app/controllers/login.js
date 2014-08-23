@@ -1,6 +1,9 @@
 
-function prompt ($scope, $log)
+function prompt ($scope, $location, $log)
 {
+    //$location.path('/setup');
+    $location.hash('setup');
+
     $scope.alerts = [
         'Please enter your email',
         'Please enter a valid email',

@@ -9,7 +9,10 @@ app.config(function ($routeProvider, $locationProvider, $logProvider){
         templateUrl: 'views/login.html',
         controller:'prompt',
     }).when('/login', {
-
+        
+    }).when('/:setup', {
+        templateUrl: 'views/setup.html',
+        controller:'setup'
     }).otherwise({ redirectTo: '/' });
 
 });
