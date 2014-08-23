@@ -7,7 +7,8 @@
     "total.js": "~1.6.0-1",
     "angular": "~1.2.21",
     "mongoose": "~3.8.15",
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "colors": "~0.6.2"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
