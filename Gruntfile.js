@@ -1,6 +1,21 @@
 module.exports = function (grunt)
 {
     grunt.initConfig({
+        bump: {
+            options: {
+                files: ['package.json'],
+                updateConfigs: [],
+                commit: true,
+                commitMessage: "Release v%VERSION%",
+                commitFiles: ['package.json', 'bower.json'],
+                createTag: true,
+                tagName: 'v%VERSION%',
+                tagMessage: 'Version %VERSION%',
+                push: true,
+                pushTo: 'origin',
+                gitDescribeOptions: ''
+            }
+        },
         clean: {
             css: ['public/css/main.css', 'public/css/*.min.css', 'public/js/concat.js']
         },
@@ -41,6 +56,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-bump');
 
     grunt.registerTask('default', ['clean', 'concat', 'less:dev', 'less:min']);
 };
