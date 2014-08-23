@@ -2,9 +2,13 @@
 
 db.users.insert({'firstName':'William', 'lastName': 'Gallios'});
 
+db.users.count({})
 
+db.users2.find();
 
 db.users.find()
+
+db.users.count()
 
 db.users.update(
     { _id: '53f79e107f3fc2f23e19699a' },
