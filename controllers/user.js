@@ -2,7 +2,7 @@ exports.install = function (framework)
 {
     framework.route('/user/', json_user_query);
     framework.route('/user/{id}/', json_user_get);
-}
+};
 
 /**
  * Gets Users
